@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MloodyE | Portfolio — Projekty Minecraft</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/stylesheets/main.css">
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    
+    <header class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <img src="src/images/profile.png" alt="MloodyE logo" style="width:90%;height:90%; border-radius: 10px;"/>
+        </div>
+        <div>
+          <div class="site-title">MloodyE</div>
+          <div style="font-size:12px;color:var(--muted)">Portfolio</div>
+        </div>
+      </div>
+      <nav>
+        <a href="https://discord.com/users/990608846676430868" target="_blank" class="primary">Kontakt</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-card">
+          <h1>Zróbmy coś, co wyróżni Twój serwer.</h1>
+          <p>Masz pomysł? Zamieńmy go w działający system. Stwórzmy rozwiązania, które nadają serwerowi charakter i przewagę nad konkurencją. Sprawna komunikacja, indywidualne podejście i pełne skupienie na Twoich oczekiwaniach a to dopiero początek.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;width:100%;max-width:360px">
+          <div class="card" style="padding:14px;display:flex;flex-direction:column;gap:10px;align-items:flex-start">
+
+              <div class="discord-widget">
+                <img id="discord-avatar" src="placeholder.png" alt="avatar">
+
+                <div class="discord-info">
+                    <div id="discord-name">Ładowanie...</div>
+                    <div id="discord-status" class="status">
+                    <span class="dot"></span>
+                    <span id="discord-status-text">Ładowanie...</span>
+                </div>
+            </div>
+            
+        </div>
+          <div class="card" style="padding:14px;display:flex;gap:10px;align-items:center;">
+            <div style="flex:1">
+              <div style="font-weight:700">Notka:</div>
+              <div style="color:var(--muted);font-size:13px;margin-top:6px">Działam w nieregularnych godzinach, ale staram się odpowiadać na wszystkie wiadomości w ciągu 24h.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 style="margin:0 0 12px">Moje Projekty</h2>
+        <div class="projects-grid"></div>
+      </section>
+
+      <section id="trusted" style="margin-top:28px">
+        <div class="card" style="padding:28px;">
+          <h2 style="margin:0 0 20px">Zaufali</h2>
+          <div class="trust-slider">
+            <div class="trust-track" aria-label="Zaufali klienci">
+            <div class="trust-slot" data-name="Cargis" aria-label="Cargis">
+              <img class="trust-avatar-img" src="src/images/clients/cargis.png" alt="Cargis" loading="lazy" />
+            </div>
+            <div class="trust-slot" data-name="KSERTEx" aria-label="KSERTEx">
+              <img class="trust-avatar-img" src="src/images/clients/ksertex.png" alt="KSERTEx" loading="lazy" />
+            </div>
+            <div class="trust-slot" data-name="Ak3wish" aria-label="Ak3wish">
+              <img class="trust-avatar-img" src="src/images/clients/ak3wish.png" alt="Ak3wish" loading="lazy" />
+            </div>
+            <div class="trust-slot" data-name="Rafskyy" aria-label="Rafskyy">
+              <img class="trust-avatar-img" src="src/images/clients/rafskyy.png" alt="Rafskyy" loading="lazy" />
+            </div>
+            <div class="trust-slot" data-name="Nazu" aria-label="Nazu">
+              <img class="trust-avatar-img" src="src/images/clients/nazu.png" alt="Nazu" loading="lazy" />
+            </div>
+            <div class="trust-slot" data-name="Mikro" aria-label="Mikro">
+              <img class="trust-avatar-img" src="src/images/clients/mikro.png" alt="Mikro" loading="lazy" />
+            </div>
+            <div class="trust-slot" data-name="TutuS" aria-label="TutuS">
+              <img class="trust-avatar-img" src="src/images/clients/tutus.png" alt="TutuS" loading="lazy" />
+            </div>
+            <div class="trust-slot" data-name="Witness" aria-label="Witness">
+              <img class="trust-avatar-img" src="src/images/clients/witness.png" alt="Witness" loading="lazy" />
+            </div>
+            <div class="trust-slot" data-name="Wyliczanek" aria-label="Wyliczanek">
+              <img class="trust-avatar-img" src="src/images/clients/wyliczanek.png" alt="Wyliczanek" loading="lazy" />
+            </div>
+            <div class="trust-slot" data-name="Wolczak" aria-label="Wolczak">
+              <img class="trust-avatar-img" src="src/images/clients/wolczak.png" alt="Wolczak" loading="lazy" />
+            </div>
+            <div class="trust-slot" data-name="Per0" aria-label="Per0">
+              <img class="trust-avatar-img" src="src/images/clients/per0.png" alt="Per0" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="project-modal" class="project-modal" aria-hidden="true">
+      <div class="project-modal__card" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+        <button id="project-modal-close" type="button" class="project-modal__close" aria-label="Zamknij">✕</button>
+
+        <h3 id="project-modal-title" class="project-modal__title">Projekt</h3>
+
+        <div class="project-modal__slider">
+          <button id="project-modal-prev" type="button" class="project-modal__nav" aria-label="Poprzedni screenshot">‹</button>
+          <div class="project-modal__media">
+            <img id="project-modal-image" src="" alt="Screenshot projektu" />
+          </div>
+          <button id="project-modal-next" type="button" class="project-modal__nav" aria-label="Następny screenshot">›</button>
+        </div>
+
+        <div id="project-modal-counter" class="project-modal__counter">1 / 1</div>
+        <p id="project-modal-desc" class="project-modal__desc"></p>
+      </div>
+    </div>
+
+    <div id="slide-lightbox" class="slide-lightbox" aria-hidden="true">
+      <button id="slide-lightbox-close" type="button" class="slide-lightbox__close" aria-label="Zamknij powiększenie">✕</button>
+      <img id="slide-lightbox-image" src="" alt="Powiększony screenshot projektu" />
+    </div>
+
+    <footer id="contact">© 2026 MloodyE Portfolio</footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="module" src="src/scripts/main.js"></script>
+  </body>
+</html>
